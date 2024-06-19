@@ -37,7 +37,7 @@
 
 
 
-function calc() {
+// function calc() {
    
 
     // let number1;
@@ -53,30 +53,71 @@ function calc() {
 
     //lblOutput.innerHTML=number1+number2;
 
-    let number01;
-    let number02;
+    // let number01;
+    // let number02;
 
-    number01 = new Number(document.getElementById("number01").value);
-    number02 = new Number(document.getElementById("number02").value);
+    // number01 = new Number(document.getElementById("number01").value);
+    // number02 = new Number(document.getElementById("number02").value);
 
-    let op=document.getElementById("op").value;
-    let lblOutput = document.getElementById("output");
+    // let op=document.getElementById("op").value;
+    // let lblOutput = document.getElementById("output");
 
-    // number1 =  Number(document.getElementById("number01").value);
-    // number2 =  Number(document.getElementById("number02").value);
+    // // number1 =  Number(document.getElementById("number01").value);
+    // // number2 =  Number(document.getElementById("number02").value);
 
-    console.log(number01+number02);
+    // console.log(number01+number02);
 
-    switch(op){
-        case "+":lblOutput.innerHTML=number01+number02; break;
-    }
+    // switch(op){
+    //     case "+":lblOutput.innerHTML=number01+number02; break;
+    // }
     
 
-    console.log(typeof number01);
-    console.log(typeof number02);
+    // console.log(typeof number01);
+    // console.log(typeof number02);
 
 
 
+// }
+
+
+// function num9Click(){
+//     document.getElementById("number01").value=9;
+// }
+
+// function num8Click(){
+//     document.getElementById("number01").value=8;
+// }
+
+
+// function calc(x,y){
+//     return x+y;
+// }
+
+// let num = calc(10,20);
+
+// console.log(num);
+
+
+// function sample(){
+//     console.log("hello");
+// }
+
+// sample();
+
+
+const customer ={
+    name:"saman",
+    age:12,
+    run: function (){
+        console.log("Run......");
+    }
 }
+
+customer.run();
+
+
+
+
+
 
 
