@@ -56,10 +56,10 @@ function calc() {
     let number01;
     let number02;
 
-    number01 = new Number(document.getElementById("number01"));
-    number02 = new Number(document.getElementById("number02"));
+    number01 = new Number(document.getElementById("number01").value);
+    number02 = new Number(document.getElementById("number02").value);
 
-    let op=document.getElementById("op");
+    let op=document.getElementById("op").value;
     let lblOutput = document.getElementById("output");
 
     // number1 =  Number(document.getElementById("number01").value);
