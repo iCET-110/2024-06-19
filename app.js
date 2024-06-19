@@ -108,12 +108,30 @@
 const customer ={
     name:"saman",
     age:12,
-    run: function (){
-        console.log("Run......");
-    }
+    run: ()=>console.log("hello")
 }
 
-customer.run();
+// customer.run();
+
+
+
+function sample(){
+    console.log("hello");
+}
+
+let sample = function(){
+    console.log("hello");
+}
+
+let sample = ()=>{
+    console.log("hello");
+}
+
+let sample = ()=>console.log("hello");
+
+
+
+
 
 
 
