@@ -105,29 +105,67 @@
 // sample();
 
 
-const customer ={
-    name:"saman",
-    age:12,
-    run: ()=>console.log("hello")
-}
+// const customer ={
+//     name:"saman",
+//     age:12,
+//     run: ()=>console.log("hello")
+// }
 
 // customer.run();
 
 
 
-function sample(){
-    console.log("hello");
-}
+// function sample(){
+//     console.log("hello");
+// }
 
-let sample = function(){
-    console.log("hello");
-}
+// let sample = function(){
+//     console.log("hello");
+// }
 
-let sample = ()=>{
-    console.log("hello");
-}
+// let sample = ()=>{
+//     console.log("hello");
+// }
 
-let sample = ()=>console.log("hello");
+// let sample = ()=>console.log("hello");
+
+const customers = [
+    {
+        name:"saman",
+        age:12,
+        address:"gampaha"
+    },
+    {
+        name:"kamal",
+        age:11,
+        address:"kurunegala"
+    },
+    {
+        name:"nimal",
+        age:15,
+        address:"anuradhapura"
+    },
+    {
+        name:"sunimal",
+        age:20,
+        address:"panadura"
+    },
+    {
+        name:"wimal",
+        age:30,
+        address:"moratuwa"
+    },
+
+]
+
+let numbers = [10,50,67,85,11,25,658,25,45];
+
+console.log(numbers.sort());
+console.log(numbers.push(500));
+console.log(numbers.length());
+console.log(numbers.pop());
+console.log(numbers.shift());
+console.log(numbers.toString());
 
 
 
