@@ -158,14 +158,31 @@ const customers = [
 
 ]
 
-let numbers = [10,50,67,85,11,25,658,25,45];
+function addCustomer(){
 
-console.log(numbers.sort());
-console.log(numbers.push(500));
-console.log(numbers.length());
-console.log(numbers.pop());
-console.log(numbers.shift());
-console.log(numbers.toString());
+    let name = document.getElementById("txtUserName").value;
+    let age = document.getElementById("txtAge").value;
+    let address = document.getElementById("txtAddress").value;
+
+    customers.push({
+        name,
+        age,
+        address
+    })
+
+    
+
+    console.log(customers);
+}
+
+// let numbers = [10,50,67,85,11,25,658,25,45];
+
+// console.log(numbers.sort());
+// console.log(numbers.pop());
+// console.log(numbers.push(500));
+// console.log(numbers.length);
+// console.log(numbers.shift());
+// console.log(numbers.toString());
 
 
 
