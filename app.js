@@ -129,6 +129,16 @@
 
 // let sample = ()=>console.log("hello");
 
+
+// let numbers = [10,50,67,85,11,25,658,25,45];
+
+// console.log(numbers.sort());
+// console.log(numbers.pop());
+// console.log(numbers.push(500));
+// console.log(numbers.length);
+// console.log(numbers.shift());
+// console.log(numbers.toString());
+
 const customers = [
     {
         name:"saman",
@@ -158,6 +168,7 @@ const customers = [
 
 ]
 
+
 function addCustomer(){
 
     let name = document.getElementById("txtUserName").value;
@@ -169,20 +180,37 @@ function addCustomer(){
         age,
         address
     })
-
-    
-
     console.log(customers);
+    showAllCustomers();
 }
 
-// let numbers = [10,50,67,85,11,25,658,25,45];
 
-// console.log(numbers.sort());
-// console.log(numbers.pop());
-// console.log(numbers.push(500));
-// console.log(numbers.length);
-// console.log(numbers.shift());
-// console.log(numbers.toString());
+
+function showAllCustomers(){
+    let tblCustomers=document.getElementById("tblCustomers");
+
+    let tableBody = `<tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Address</th>
+                    </tr>`;
+
+
+    customers.forEach(data =>{
+        console.log(data);
+
+        tableBody+=` <tr>
+                        <td> ${data.name}</td>
+                        <td> ${data.age}</td>
+                        <td> ${data.address}</td>
+                    </tr>`;
+
+    })
+    tblCustomers.innerHTML=tableBody;
+    console.log(tableBody);
+}
+
+
 
 
 
